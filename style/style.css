@@ -1,0 +1,123 @@
+:root {
+  --bg-main: #D2D2D9;
+  --primary: #011640;
+  --neutral-light: #A6A198;
+  --neutral-dark: #262626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--neutral-dark);
+}
+
+/* HERO */
+.hero {
+  max-width: 1100px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.hero p {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* SEARCH */
+form {
+  margin-top: 40px;
+  display: flex;
+  max-width: 700px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+form input {
+  flex: 1;
+  padding: 18px 22px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: var(--neutral-dark);
+}
+
+form input::placeholder {
+  color: var(--neutral-light);
+}
+
+form button {
+  padding: 0 30px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #022a80;
+}
+
+/* GRID */
+main {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+#search-result {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+/* IMAGES */
+#search-result img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+#search-result img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* SHOW MORE */
+#show-more-btn {
+  display: none;
+  margin: 70px auto 100px;
+  padding: 14px 40px;
+  border-radius: 30px;
+  border: 1px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#show-more-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}

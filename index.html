@@ -2,25 +2,37 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Gerador de imagem</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Imagens</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 
 <body>
 
-  <h1>Gerador de imagem</h1>
-  <form id="search-form">
-    <input id="search-box" type="text" id="search-form" placeholder="Search anything here...">
-    <button>Search</button>
-  </form>
+  <header class="hero">
+    <h1>Explore imagens incríveis</h1>
+    <p>Busque fotos de alta qualidade para qualquer projeto</p>
 
-  <div id="search-result"></div>
-  <button id="show-more-btn">Show more</button>
+    <form id="search-form">
+      <input id="search-box" type="text" placeholder="Buscar imagens..." />
+      <button type="submit">Buscar</button>
+    </form>
+  </header>
 
+  <main>
+    <section id="search-result"></section>  
 
-  <script src="script.js"></script>
+    <button id="show-more-btn">Carregar mais</button>
+  </main>
+
+  <script type="module" src="scripts/main.js"></script>
+  
 </body>
 
 </html>
